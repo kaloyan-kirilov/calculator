@@ -87,6 +87,7 @@ button {
     background-color: #8d8d8d;
     font-family: 'Aldrich';
     font-size: 30px;
+    outline: none;
 }
 
 button:hover {
