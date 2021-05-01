@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('../img/desk-texture.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+#calculator {
+    width: 450px;
+    height: 700px;
+    background-image: linear-gradient(#363642, #2c2c36);
+    border-radius: 25px;
+    margin: auto;
+}
+
+#display-container {
+    width: 85%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: auto;
+}
+
+#brand-name {
+    color: white;
+    font-family: 'Aclonica';
+    font-size: 27px;
+    letter-spacing: 2px;
+    padding-top: 10%;
+}
+
+#display-frame {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(80deg, #ebebeb, #d7d7d7);
+    border-radius: 10px;
+    margin-bottom: 6%;
+}
+
+#display-screen {
+    width: 85%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: #9aa76d;
+    border: 1px solid gray;
+    font-family: 'DS-Digital';
+    font-size: 80px;
+    padding: 2%;
+    margin-top: 5%;
+    overflow: hidden;
+}
+
+#buttons-container {
+    width: 85%;
+    height: 60%;
+    margin: auto;
+}
+
+#buttons {
+    width: 100%;
+    height: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 4%;
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+button {
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: #8d8d8d;
+    font-family: 'Aldrich';
+    font-size: 30px;
+}
+
+button:hover {
+    background-color: #a7a7a7;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+#all-clear {
+    background-color: #e24848;
+}
+
+#all-clear:hover {
+    background-color: #fd5252;
+}
+
+#delete {
+    background-color: #48a8e4;
+}
+
+#delete:hover {
+    background-color: #5bc0ff;
+}
+
+#equals {
+    background-color: #e26429;
+}
+
+#equals:hover {
+    background-color: #ff7332;
+}
+
+#project-title {
+    width: 100vw;
+    height: 10vh;
+    min-height: 60px;
+    font-size: 34px;
+}
+
+#web-dev {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.external-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto Slab';
+    color: #796334;
+}
+
+.footer-font-size {
+    font-size: 22px;
+}
+
+#github-link {
+    padding-bottom: 25px;
+}
+
+#github-link a {
+    color: inherit;
+}
+
+#github-link a:hover {
+    text-decoration-color: red;
+}
+
+@font-face {
+    font-family: 'Aclonica';
+    src: url('../fonts/Aclonica-Regular.woff') format('woff'),
+         url('../fonts/Aclonica-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aldrich';
+    src: url('../fonts/Aldrich-Regular.woff') format('woff'),
+         url('../fonts/Aldrich-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DS-Digital';
+    src: url('../fonts/DS-Digital.woff') format('woff'),
+         url('../fonts/DS-Digital.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../fonts/RobotoSlab-Medium.woff') format('woff'),
+         url('../fonts/RobotoSlab-Medium.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media screen and (max-width: 1600px) and (max-height: 900px) {
+    #project-title {
+        font-size: 28px;
+    }
+
+    #calculator {
+        width: 375px;
+        height: 585px;
+        border-radius: 20px;
+    }
+
+    #brand-name {
+        font-size: 22px;
+    }
+
+    #display-frame {
+        border-radius: 7px;
+    }
+
+    #display-screen {
+        font-size: 67px;
+    }
+
+    button {
+        border-radius: 4px;
+        font-size: 24px;
+    }
+
+    .footer-font-size {
+        font-size: 19px;
+    }
+}
+
+@media screen and (max-width: 1366px) and (max-height: 768px) {
+    #project-title {
+        font-size: 23px;
+    }
+
+    #calculator {
+        width: 310px;
+        height: 485px;
+        border-radius: 16px;
+    }
+
+    #brand-name {
+        font-size: 17px;
+    }
+
+    #display-frame {
+        border-radius: 7px;
+    }
+
+    #display-screen {
+        font-size: 56px;
+    }
+
+    button {
+        border-radius: 4px;
+        font-size: 21px;
+    }
+
+    .footer-font-size {
+        font-size: 16px;
+    }
+
+    #web-dev {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (min-height: 1024px) and (orientation: portrait) {
+    #project-title {
+        font-size: 4.85vw;
+    }
+
+    #calculator {
+        width: 64vw;
+        height: 100vw;
+        border-radius: 3.5vw;
+    }
+
+    #brand-name {
+        font-size: 3.86vw;
+    }
+
+    #display-frame {
+        border-radius: 1.5vw;
+    }
+
+    #display-screen {
+        font-size: 11.5vw;
+    }
+
+    button {
+        border-radius: 0.75vw;
+        font-size: 4.3vw;
+    }
+
+    .footer-font-size {
+        font-size: 3.2vw;
+    }
+
+    #web-dev {
+        margin-top: 2.5vw;
+    }
+
+    #github-link {
+        padding-bottom: 3vw;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    #project-title {
+        font-size: 6.75vw;
+    }
+
+    #calculator {
+        width: 90vw;
+        height: 140vw;
+        border-radius: 5vw;
+    }
+
+    #brand-name {
+        font-size: 5.25vw;
+    }
+
+    #display-frame {
+        border-radius: 2vw;
+    }
+
+    #display-screen {
+        font-size: 16vw;
+    }
+
+    button {
+        border-radius: 1vw;
+        font-size: 5.75vw;
+    }
+
+    .footer-font-size {
+        font-size: 4.5vw;
+    }
+
+    #web-dev {
+        margin-top: 3vw;
+    }
+
+    #github-link {
+        padding-bottom: 3vw;
+    }
+}
