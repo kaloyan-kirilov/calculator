@@ -1,10 +1,55 @@
+@font-face {
+    font-family: 'Aclonica';
+    src: url('../fonts/Aclonica-Regular.woff') format('woff'),
+         url('../fonts/Aclonica-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aldrich';
+    src: url('../fonts/Aldrich-Regular.woff') format('woff'),
+         url('../fonts/Aldrich-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DS-Digital';
+    src: url('../fonts/DS-Digital.woff') format('woff'),
+         url('../fonts/DS-Digital.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lobster';
+    src: url('../fonts/Lobster-Regular.woff') format('woff'),
+         url('../fonts/Lobster-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Play';
+    src: url('../fonts/Play-Bold.woff') format('woff'),
+         url('../fonts/Play-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html {
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
     background-color: #d8c291;
     background-image: url('../img/desk-texture.jpg');
     background-repeat: no-repeat;
@@ -13,12 +58,31 @@ html {
     background-size: cover;
 }
 
+#center {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#project-title {
+    font-family: 'Lobster';
+    font-size: 4.65vh;
+    color: rgb(140, 75, 115);
+    margin-bottom: 2vh;
+    transform: scaleX(1.05);
+}
+
 #calculator {
-    width: 450px;
-    height: 700px;
-    background-image: linear-gradient(#363642, #2c2c36);
-    border-radius: 25px;
+    width: 48vh;
+    height: 75vh;
+    background-image: linear-gradient(#3d3d4b, #272731);
+    border-radius: 2vh;
     margin: auto;
+    box-shadow: inset 0.7vh 0.7vh 0.25vh rgba(0, 0, 0, 0.2), inset -0.7vh -0.7vh 0.25vh rgba(0, 0, 0, 0.2);
+    border: 0.35vh outset rgba(39, 39, 49, 0.25);
 }
 
 #display-container {
@@ -34,9 +98,10 @@ html {
 #brand-name {
     color: white;
     font-family: 'Aclonica';
-    font-size: 27px;
+    font-size: 3vh;
     letter-spacing: 2px;
     padding-top: 10%;
+    transform: scaleY(0.9) scaleX(1.05);
 }
 
 #display-frame {
@@ -45,9 +110,10 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(80deg, #ebebeb, #d7d7d7);
-    border-radius: 10px;
+    background-image: linear-gradient(80deg, #ffffff, #cfcfcf);
+    border-radius: 1vh;
     margin-bottom: 6%;
+    box-shadow: rgba(0, 0, 0, 0.8) 0 0 0.5vh 0, rgba(0, 0, 0, 0.8) 0 0 0.5vh 0;
 }
 
 #display-screen {
@@ -59,10 +125,11 @@ html {
     background-color: #9aa76d;
     border: 1px solid gray;
     font-family: 'DS-Digital';
-    font-size: 80px;
+    font-size: 9vh;
     padding: 2%;
     margin-top: 5%;
     overflow: hidden;
+    box-shadow: inset 0 0 0.7vh rgba(39, 39, 49, 0.5);
 }
 
 #buttons-container {
@@ -84,19 +151,20 @@ html {
 }
 
 button {
-    border: 2px solid transparent;
-    border-radius: 5px;
+    border: 0.35vh outset rgba(255, 255, 255, 0.23);
+    border-radius: 0.5vh;
     cursor: pointer;
     color: white;
     background-color: #8d8d8d;
     font-family: 'Aldrich';
-    font-size: 30px;
+    font-size: 3.25vh;
     outline: none;
+    box-shadow: 0 0 0.85vh rgba(0, 0, 0, 0.5);
 }
 
 button:hover {
     background-color: #a7a7a7;
-    border: 2px solid rgba(255, 255, 255, 0.5);
+    border: 0.35vh solid rgba(255, 255, 255, 0.5);
 }
 
 #all-clear {
@@ -123,32 +191,17 @@ button:hover {
     background-color: #ff7332;
 }
 
-#project-title {
-    width: 100vw;
-    height: 10vh;
-    min-height: 60px;
-    font-size: 34px;
-}
-
-#web-dev {
-    margin-top: 15px;
-    text-align: center;
+#footer-text {
+    font-family: 'Play';
+    font-size: 2.5vh;
+    color: rgba(130, 95, 80, 0.9);
+    margin-top: 2vh;
+    transform: scaleY(1.1);
 }
 
 .external-text {
     display: flex;
-    align-items: center;
     justify-content: center;
-    font-family: 'Roboto Slab';
-    color: #796334;
-}
-
-.footer-font-size {
-    font-size: 22px;
-}
-
-#github-link {
-    padding-bottom: 25px;
 }
 
 #github-link a {
@@ -159,186 +212,40 @@ button:hover {
     text-decoration-color: red;
 }
 
-@font-face {
-    font-family: 'Aclonica';
-    src: url('../fonts/Aclonica-Regular.woff') format('woff'),
-         url('../fonts/Aclonica-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Aldrich';
-    src: url('../fonts/Aldrich-Regular.woff') format('woff'),
-         url('../fonts/Aldrich-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'DS-Digital';
-    src: url('../fonts/DS-Digital.woff') format('woff'),
-         url('../fonts/DS-Digital.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Roboto Slab';
-    src: url('../fonts/RobotoSlab-Medium.woff') format('woff'),
-         url('../fonts/RobotoSlab-Medium.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@media screen and (max-width: 1600px) and (max-height: 900px) {
+@media screen and (max-width: 500px) {
     #project-title {
-        font-size: 28px;
-    }
+        font-size: 8.5vw;
+        margin-bottom: 4vw;
+    }    
 
     #calculator {
-        width: 375px;
-        height: 585px;
-        border-radius: 20px;
-    }
-
-    #brand-name {
-        font-size: 22px;
-    }
-
-    #display-frame {
-        border-radius: 7px;
-    }
-
-    #display-screen {
-        font-size: 67px;
-    }
-
-    button {
-        border-radius: 4px;
-        font-size: 24px;
-    }
-
-    .footer-font-size {
-        font-size: 19px;
-    }
-}
-
-@media screen and (max-width: 1366px) and (max-height: 768px) {
-    #project-title {
-        font-size: 23px;
-    }
-
-    #calculator {
-        width: 310px;
-        height: 485px;
-        border-radius: 16px;
-    }
-
-    #brand-name {
-        font-size: 17px;
-    }
-
-    #display-frame {
-        border-radius: 7px;
-    }
-
-    #display-screen {
-        font-size: 56px;
-    }
-
-    button {
-        border-radius: 4px;
-        font-size: 21px;
-    }
-
-    .footer-font-size {
-        font-size: 16px;
-    }
-
-    #web-dev {
-        margin-top: 10px;
-    }
-}
-
-@media screen and (min-height: 1024px) and (orientation: portrait) {
-    #project-title {
-        font-size: 4.85vw;
-    }
-
-    #calculator {
-        width: 64vw;
-        height: 100vw;
+        width: 86vw;
+        height: 134vw;
         border-radius: 3.5vw;
+        box-shadow: inset 1.1vw 1.1vw 0.6vw rgba(0, 0, 0, 0.2), inset -1.1vw -1.1vw 0.6vw rgba(0, 0, 0, 0.2);
     }
 
     #brand-name {
-        font-size: 3.86vw;
+        font-size: 5.3vw;
     }
 
     #display-frame {
-        border-radius: 1.5vw;
-    }
-
-    #display-screen {
-        font-size: 11.5vw;
-    }
-
-    button {
-        border-radius: 0.75vw;
-        font-size: 4.3vw;
-    }
-
-    .footer-font-size {
-        font-size: 3.2vw;
-    }
-
-    #web-dev {
-        margin-top: 2.5vw;
-    }
-
-    #github-link {
-        padding-bottom: 3vw;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    #project-title {
-        font-size: 6.75vw;
-    }
-
-    #calculator {
-        width: 90vw;
-        height: 140vw;
-        border-radius: 5vw;
-    }
-
-    #brand-name {
-        font-size: 5.25vw;
-    }
-
-    #display-frame {
-        border-radius: 2vw;
+        border-radius: 2vw;        
     }
 
     #display-screen {
         font-size: 16vw;
+        box-shadow: inset 0 0 1vw rgba(0, 0, 0, 0.5);
     }
 
     button {
         border-radius: 1vw;
         font-size: 5.75vw;
+        box-shadow: 0 0 1.25vw rgba(0, 0, 0, 0.5);
     }
 
-    .footer-font-size {
-        font-size: 4.5vw;
-    }
-
-    #web-dev {
-        margin-top: 3vw;
-    }
-
-    #github-link {
-        padding-bottom: 5vw;
+    #footer-text {
+        font-size: 5vw;
+        margin-top: 4vw;
     }
 }
