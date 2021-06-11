@@ -209,11 +209,43 @@ button:hover {
 }
 
 @media screen and (max-width: 500px) {
-    #calculator {
-        width: 90vw;
+    body {
+        min-height: 640px;
     }
 
     #project-title {
-        font-size: 5vh;
+        font-size: 8.5vw;
+        margin-bottom: 4vw;
+    }    
+
+    #calculator {
+        width: 86vw;
+        height: 134vw;
+        border-radius: 3.5vw;
+        box-shadow: inset 1.1vw 1.1vw 0.6vw rgba(0, 0, 0, 0.2), inset -1.1vw -1.1vw 0.6vw rgba(0, 0, 0, 0.2);
+    }
+
+    #brand-name {
+        font-size: 5.3vw;
+    }
+
+    #display-frame {
+        border-radius: 2vw;        
+    }
+
+    #display-screen {
+        font-size: 16vw;
+        box-shadow: inset 0 0 1vw rgba(0, 0, 0, 0.5);
+    }
+
+    button {
+        border-radius: 1vw;
+        font-size: 5.75vw;
+        box-shadow: 0 0 1.25vw rgba(0, 0, 0, 0.5);
+    }
+
+    #footer-text {
+        font-size: 5vw;
+        margin-top: 4vw;
     }
 }
