@@ -66,7 +66,7 @@ body {
 #project-title {
     font-family: 'Lobster';
     font-size: 4.65vh;
-    color: #a84b66;
+    color: #aa4b6e;
     margin-bottom: 2vh;
     transform: scaleX(1.05);
 }
@@ -151,7 +151,7 @@ body {
 }
 
 button {
-    border: 0.4vh outset rgba(255, 255, 255, 0.3);
+    border: 0.35vh outset rgba(255, 255, 255, 0.35);
     border-radius: 0.5vh;
     cursor: pointer;
     color: white;
@@ -163,7 +163,7 @@ button {
 
 button:hover {
     background-color: #a7a7a7;
-    border: 0.4vh solid rgba(255, 255, 255, 0.5);
+    border: 0.35vh solid rgba(255, 255, 255, 0.5);
 }
 
 #all-clear {
