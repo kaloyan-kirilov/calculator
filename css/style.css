@@ -217,7 +217,7 @@ button:hover {
     }
 
     #project-title {
-        font-size: 8.75vw;
+        font-size: 9vw;
         margin-bottom: 4vw;
     }    
 
@@ -245,7 +245,7 @@ button:hover {
     }
 
     #footer-text {
-        font-size: 4.75vw;
+        font-size: 4.6vw;
         margin-top: 4vw;
     }
 }
